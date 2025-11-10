@@ -11,6 +11,20 @@ public class LoginPage {
 
     private  final Locator loginButton ;
 
+    /*Useful locator finding approaches*
+
+    page.locator("#name")  -> By id attribute
+
+    page.locator("input[name='lname'"])  -> By name attribute
+
+    page.locator("input[value='lname'"])  -> By value
+
+    page.locator("select#option") -> find dropdown
+
+    page.locator("//input[@type='fname']") -> Xpath
+
+     */
+
     public LoginPage(Page page) {
         this.page = page;
         this.userNameTextBox = page.getByPlaceholder("Username");
